@@ -1,0 +1,283 @@
+body {
+background:#888;
+font-family:Arial;
+font-size:20px;
+margin:25px
+}
+
+a {
+color:#eee;
+text-decoration:none
+}
+
+a:hover {
+text-decoration:underline
+}
+
+#main {
+background:#eee;
+border:5px solid #333;
+margin:0 0 10px;
+padding:25px
+}
+
+#form {
+border:none;
+padding-bottom:25px;
+text-align:center
+}
+
+#map_div {
+height:400px;
+margin:0 auto;
+width:800px
+}
+
+#notice,#helper {
+padding:15px;
+text-align:center
+}
+
+#notice {
+color:red
+}
+
+#helper {
+color:#006400
+}
+
+img {
+border:none
+}
+
+.row {
+display:table-row
+}
+
+.button {
+background:url(/images/pattern.png);
+border:10px #eee solid;
+color:#eee;
+display:table-cell;
+height:71px
+}
+
+.buttonDetails {
+border:10px #eee solid;
+display:table-cell
+}
+
+.buttonDetailsDiv {
+border:2px #eee solid;
+border-top-width:0;
+font-size:12px;
+padding:5px;
+position:relative;
+text-align:left;
+top:-10px
+}
+
+.blask {
+background:url(/images/blask.png) no-repeat center;
+height:70px;
+margin:auto;
+position:absolute;
+width:260px
+}
+
+.buttonCpt {
+left:-12px;
+position:relative;
+text-align:right;
+top:10px
+}
+
+.details {
+font-size:11px;
+left:-5px;
+position:relative;
+text-align:right;
+top:20px
+}
+
+#buttons {
+border-collapse:collapse;
+display:table;
+margin:20px auto;
+table-layout:fixed;
+text-align:center;
+width:810px
+}
+
+.detP {
+font-weight:700
+}
+
+.detC {
+margin:10px 0
+}
+
+#parksHide,#destinationsHide,#problemsHide {
+display:none
+}
+
+.windowinfobuttons {
+margin-top:15px;
+text-align:center
+}
+
+.windowinfobuttons input {
+font-size:13px;
+margin:2px;
+width:100px
+}
+
+#addMarkerForm {
+margin:15px
+}
+
+#addMarkerForm input,#addMarkerForm textarea,#addMarkerForm select {
+font-family:Arial;
+font-size:13px;
+width:180px
+}
+
+.addMarkerFormCell {
+display:table-cell;
+padding:0 5px;
+vertical-align:top
+}
+
+.editPanel {
+font-size:11px;
+margin:10px 10px 0;
+text-align:right
+}
+
+.editPanel a {
+color:#00f
+}
+
+#addPolylineFirstStepDiv {
+line-height:18px
+}
+
+#addPolylineFirstStepDiv input {
+margin:auto
+}
+
+.polyInfoTitle {
+display:inline;
+font-size:16px;
+font-weight:700
+}
+
+.polyInfoLength {
+display:inline;
+font-size:10px
+}
+
+.polyInfoBody {
+font-size:11px;
+width:350px
+}
+
+.selected {
+background:url(/images/checked.png) #222
+}
+
+.unselected {
+background:url(/images/unchecked.png) #1c1c1c
+}
+
+#trasy {
+background:url(/images/pattern.png);
+background-color: #7eba10;
+color:#fff;
+height:71px;
+margin:20px auto;
+position:relative;
+width:800px
+}
+
+#trasy:hover{
+background-color: #7ebaf0;    
+}
+
+#add{
+    position: absolute;
+    top: 5px;
+    left: 740px;
+    font-size: 11px;
+    line-height:7px;
+    text-align: center;
+}
+
+#add:hover{
+    text-decoration: underline;
+    cursor:pointer
+}
+
+#sciezki {
+background:url(/images/bblask.png);
+padding:8px
+}
+
+#sciezki > #chceckboxes {
+font-size:12px;
+margin:10px 10px 10px 0
+}
+
+#sciezki > #chceckboxes > label:hover{
+    text-decoration:underline
+}
+
+#sciezkiChbx input {
+margin-left:15px;
+margin-right:0
+}
+
+#sciezkiDetails {
+border:3px #7eba10 solid;
+border-top:0;
+display:none;
+font-size:12px;
+margin:auto;
+padding:3px;
+position:relative;
+top:-20px;
+width:788px
+}
+
+.ButtonStyle {
+background:#fff;
+border:1px solid #000;
+cursor:pointer;
+font-family:arial,sans-serif;
+font-size:12px;
+margin-bottom:3px;
+opacity:0.8;
+padding:2px;
+text-align:center;
+width:92px
+}
+
+.addButtonStyle {
+background:#FFF;
+border:1px solid #000;
+cursor:pointer;
+font-family:arial,sans-serif;
+font-size:12px;
+left:97px;
+margin-bottom:3px;
+opacity:0.8;
+padding:2px;
+position:absolute;
+text-align:center;
+top:0;
+width:30px
+}
+
+.buttonDetails a,#sciezkiDetails a {
+color:#000
+}

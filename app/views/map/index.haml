@@ -1,0 +1,37 @@
+#map_div
+#trasy
+  #add
+    %img(src='/images/add.png' alt='dodaj')
+    %br/
+    dodaj
+
+  #sciezki
+    Ścieżki rowerowe
+    #chceckboxes
+      %input(id="r1" type="checkbox")
+      %label(for="r1") Ścieżki rowerowe
+      %input(id="r2" type="checkbox")
+      %label(for="r2") Alejki
+      %input(id="r3" type="checkbox")
+      %label(for="r3") Szerokie chodniki
+      %input(id="r4" type="checkbox")
+      %label(for="r4") Trasy rowerowe
+      %input(id="r5" type="checkbox")
+      %label(for="r5") Planowane ścieżki rowerowe
+
+    - form_for(@line) do |f|
+      = f.error_messages
+
+      %p
+        = f.label :name
+        = f.text_field :name
+
+      %p
+        = f.label :description
+        = f.text_area :description, :rows => 2
+
+      %p
+        = f.submit "Dodaj"
+        or
+        = link_to "Wróć", :back
+    
