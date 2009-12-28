@@ -1,7 +1,7 @@
 module CouchRestRails
   class Document < CouchRest::ExtendedDocument
 
-    include Validatable
+    include CouchRest::Validation
 
     def self.use_database(db)
       db = [COUCHDB_CONFIG[:db_prefix], db.to_s, COUCHDB_CONFIG[:db_suffix]].join
