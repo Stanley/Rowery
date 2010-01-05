@@ -1,0 +1,37 @@
+%h1= @marker.name
+=@marker.description
+
+-if @marker['_attachments']
+  %h3 Zdjęcia:
+  %ul
+    - @marker['_attachments'].each do |attachment_name, attachment_attributes|
+      %li= link_to attachment_name, marker_path(@marker, :filename => attachment_name)
+
+
+-if current_user
+  .admin
+    = link_to "Edytuj", edit_marker_path(@marker.name)
+    |
+    = link_to "Usuń", marker_path(@marker), :class => :destroy #:controller => "markers", :action => "destroy", :id => @marker.id
+
+-#
+  :javascript
+    alert("??")
+    $("#map_div").ajaxComplete(function(event,request, settings){
+      alert("hello wrd")
+    });
+    
+    $('.destroy').click(function(){
+      $.ajax({
+        type: "DELETE",
+        url: this.href,
+        success: function(msg){
+          infowindow2.close();
+          alert( "Punkt został usunięty" );
+        }
+      })
+      return false
+    })
+
+
+

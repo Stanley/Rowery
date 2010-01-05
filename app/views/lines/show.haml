@@ -1,0 +1,15 @@
+%h1= @line.name
+=@line.description
+
+-if @line['_attachments']
+  %h3 Zdjęcia:
+  %ul
+    - @line['_attachments'].each do |attachment_name, attachment_attributes|
+      %li= link_to attachment_name, line_path(@line, :filename => attachment_name)
+
+
+-if current_user
+  .admin
+    = link_to "Edytuj", edit_line_path(@line.name)
+    |
+    = link_to "Usuń", line_path(@line), :class => :destroy

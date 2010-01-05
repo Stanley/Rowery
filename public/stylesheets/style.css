@@ -1,283 +1,402 @@
 body {
-background:#888;
-font-family:Arial;
-font-size:20px;
-margin:25px
+  background:#888;
+  font-family:Arial;
+  font-size:20px;
+  margin:25px;
+  height: 100%
 }
 
 a {
-color:#eee;
-text-decoration:none
+  color:#eee;
+  text-decoration:none
 }
 
 a:hover {
-text-decoration:underline
+  text-decoration:underline
 }
 
 #main {
-background:#eee;
-border:5px solid #333;
-margin:0 0 10px;
-padding:25px
+  background:#eee;
+  border:5px solid #333;
+  margin:0 0 10px;
+  padding:25px
 }
 
 #form {
-border:none;
-padding-bottom:25px;
-text-align:center
+  border:none;
+  padding-bottom:25px;
+  text-align:center
 }
 
 #map_div {
-height:400px;
-margin:0 auto;
-width:800px
+  height:400px;
+  width:100%
 }
 
+#map_div h1{
+  font-size: 27px;
+  padding: 0;
+  margin: 0;
+  text-align:center;
+}
+
+#map_div p{
+  margin: 0;
+}
+
+#map_div input, #map_div textarea{
+  width: 300px
+}
+
+#map_div input[type=submit]{
+  margin: 15px 0
+}
+
+#map_div .admin{
+  margin-top: 20px
+}
+
+#map_div h3{
+  margin: 10px 0
+}
+
+#map_div ul{
+  list-style-type: disc;
+}
+
+#map_div ul a{
+  color: blue
+}
+
+
 #notice,#helper {
-padding:15px;
-text-align:center
+  padding:15px;
+  text-align:center
 }
 
 #notice {
-color:red
+  color:red
 }
 
 #helper {
-color:#006400
+  color:#006400
 }
 
 img {
-border:none
+  border:none
 }
 
 .row {
-display:table-row
+  display:table-row
 }
 
 .button {
-background:url(/images/pattern.png);
-border:10px #eee solid;
-color:#eee;
-display:table-cell;
-height:71px
+  background:url(/images/pattern.png);
+  border:10px #eee solid;
+  color:#eee;
+  display:table-cell;
+  height:71px
 }
 
 .buttonDetails {
-border:10px #eee solid;
-display:table-cell
+  border:10px #eee solid;
+  display:table-cell
 }
 
 .buttonDetailsDiv {
-border:2px #eee solid;
-border-top-width:0;
-font-size:12px;
-padding:5px;
-position:relative;
-text-align:left;
-top:-10px
+  border:2px #eee solid;
+  border-top-width:0;
+  font-size:12px;
+  padding:5px;
+  position:relative;
+  text-align:left;
+  top:-10px
 }
 
 .blask {
-background:url(/images/blask.png) no-repeat center;
-height:70px;
-margin:auto;
-position:absolute;
-width:260px
+  background:url(/images/blask.png) no-repeat center;
+  height:70px;
+  margin:auto;
+  position:absolute;
+  width:260px
 }
 
 .buttonCpt {
-left:-12px;
-position:relative;
-text-align:right;
-top:10px
+  left:-12px;
+  position:relative;
+  text-align:right;
+  top:10px
 }
 
 .details {
-font-size:11px;
-left:-5px;
-position:relative;
-text-align:right;
-top:20px
+  font-size:11px;
+  left:-5px;
+  position:relative;
+  text-align:right;
+  top:20px
 }
 
 #buttons {
-border-collapse:collapse;
-display:table;
-margin:20px auto;
-table-layout:fixed;
-text-align:center;
-width:810px
+  border-collapse:collapse;
+  display:table;
+  margin:20px auto;
+  table-layout:fixed;
+  text-align:center;
+  width:810px
 }
 
 .detP {
-font-weight:700
+  font-weight:700
 }
 
 .detC {
-margin:10px 0
+  margin:10px 0
 }
 
 #parksHide,#destinationsHide,#problemsHide {
-display:none
+  display:none
 }
 
 .windowinfobuttons {
-margin-top:15px;
-text-align:center
+  margin-top:15px;
+  text-align:center
 }
 
 .windowinfobuttons input {
-font-size:13px;
-margin:2px;
-width:100px
+  font-size:13px;
+  margin:2px;
+  width:100px
 }
 
 #addMarkerForm {
-margin:15px
+  margin:15px
 }
 
 #addMarkerForm input,#addMarkerForm textarea,#addMarkerForm select {
-font-family:Arial;
-font-size:13px;
-width:180px
+  font-family:Arial;
+  font-size:13px;
+  width:180px
 }
 
 .addMarkerFormCell {
-display:table-cell;
-padding:0 5px;
-vertical-align:top
+  display:table-cell;
+  padding:0 5px;
+  vertical-align:top
 }
 
 .editPanel {
-font-size:11px;
-margin:10px 10px 0;
-text-align:right
+  font-size:11px;
+  margin:10px 10px 0;
+  text-align:right
 }
 
 .editPanel a {
-color:#00f
+  color:#00f
 }
 
 #addPolylineFirstStepDiv {
-line-height:18px
+  line-height:18px
 }
 
 #addPolylineFirstStepDiv input {
-margin:auto
+  margin:auto
 }
 
 .polyInfoTitle {
-display:inline;
-font-size:16px;
-font-weight:700
+    display:inline;
+    font-size:16px;
+    font-weight:700
 }
 
 .polyInfoLength {
-display:inline;
-font-size:10px
+  display:inline;
+  font-size:10px
 }
 
 .polyInfoBody {
-font-size:11px;
-width:350px
+  font-size:11px;
+  width:350px
 }
 
 .selected {
-background:url(/images/checked.png) #222
+  background:url(/images/checked.png) #222
 }
 
 .unselected {
-background:url(/images/unchecked.png) #1c1c1c
+  background:url(/images/unchecked.png) #1c1c1c
 }
 
 #trasy {
-background:url(/images/pattern.png);
-background-color: #7eba10;
-color:#fff;
-height:71px;
-margin:20px auto;
-position:relative;
-width:800px
+  background: #7eba10 url(/images/pattern.png) repeat;
+  color:#fff;
+  height:71px;
+  margin:20px auto 0;
+  position:relative;
+  width:800px
 }
 
-#trasy:hover{
-background-color: #7ebaf0;    
-}
 
 #add{
-    position: absolute;
-    top: 5px;
-    left: 740px;
-    font-size: 11px;
-    line-height:7px;
-    text-align: center;
-}
-
-#add:hover{
-    text-decoration: underline;
-    cursor:pointer
+  background: url('/images/add.png') no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 740px;
+  font-size: 11px;
+  text-align: center;
+  display: block;
+  width: 49px;
+  padding-top: 45px
 }
 
 #sciezki {
-background:url(/images/bblask.png);
-padding:8px
+  background: url(/images/bblask.png) no-repeat;
+  padding:8px
 }
 
 #sciezki > #chceckboxes {
-font-size:12px;
-margin:10px 10px 10px 0
+  font-size:12px;
+  margin:10px 10px 10px 0
 }
 
 #sciezki > #chceckboxes > label:hover{
-    text-decoration:underline
+  text-decoration:underline
 }
 
 #sciezkiChbx input {
-margin-left:15px;
-margin-right:0
+  margin-left:15px;
+  margin-right:0
 }
 
 #sciezkiDetails {
-border:3px #7eba10 solid;
-border-top:0;
-display:none;
-font-size:12px;
-margin:auto;
-padding:3px;
-position:relative;
-top:-20px;
-width:788px
+  border:3px #7eba10 solid;
+  border-top:0;
+  display:none;
+  font-size:12px;
+  margin:auto;
+  padding:3px;
+  position:relative;
+  top:-20px;
+  width:788px
 }
 
 .ButtonStyle {
-background:#fff;
-border:1px solid #000;
-cursor:pointer;
-font-family:arial,sans-serif;
-font-size:12px;
-margin-bottom:3px;
-opacity:0.8;
-padding:2px;
-text-align:center;
-width:92px
+  background:#fff;
+  border:1px solid #000;
+  cursor:pointer;
+  font-family:arial,sans-serif;
+  font-size:12px;
+  margin-bottom:3px;
+  opacity:0.8;
+  padding:2px;
+  text-align:center;
+  width:92px
 }
 
 .addButtonStyle {
-background:#FFF;
-border:1px solid #000;
-cursor:pointer;
-font-family:arial,sans-serif;
-font-size:12px;
-left:97px;
-margin-bottom:3px;
-opacity:0.8;
-padding:2px;
-position:absolute;
-text-align:center;
-top:0;
-width:30px
+  background:#FFF;
+  border:1px solid #000;
+  cursor:pointer;
+  font-family:arial,sans-serif;
+  font-size:12px;
+  left:97px;
+  margin-bottom:3px;
+  opacity:0.8;
+  padding:2px;
+  position:absolute;
+  text-align:center;
+  top:0;
+  width:30px
 }
 
 .buttonDetails a,#sciezkiDetails a {
-color:#000
+  color:#000
 }
+
+#content{
+  display: none;
+}
+
+#content form{    
+  border: 5px #7eba10 solid;
+  border-top-width: 1px;
+  margin: 0 auto;
+  width: 730px;
+  padding: 10px 30px
+}
+
+#content h1{
+  display: none
+}
+
+form label{
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+}
+
+form textarea{
+  width: 100%;
+}
+
+form > #submit{
+  text-align: center;
+}
+
+form a{
+  color: DarkGreen
+}
+
+#map{
+  margin:0 auto;
+  width:800px;
+  position:relative;
+}
+
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+#controls{
+  position: absolute;
+  top:30px;
+  right:5px;
+
+}
+
+#controls li{
+  border-style: solid;
+  border-color: rgb(208, 208, 208) rgb(112, 112, 112) rgb(112, 112, 112) rgb(208, 208, 208);
+  border-width: 1px;
+  color: black;
+  font-family: Arial,sans-serif;
+  font-size: 12px;
+  margin-bottom:2px;
+  background-color:white;
+  text-align:center;
+  display: inline-block;
+  cursor:pointer
+}
+
+#controls > ul > li:first-child{
+  width: 60px;
+}
+
+#controls > ul > li > a{
+  color: #000;
+  width: 100%;
+  padding: 1px 5px;
+}
+
+.admin a{
+  background-color: red;
+  color: #fff
+}
+
+.admin a:hover{
+  color: red;
+  background-color: #fff
+}
+

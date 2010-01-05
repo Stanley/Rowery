@@ -1,0 +1,28 @@
+- form_for(@line, :html => {:multipart => true}, :url => {:action => action}) do |f|
+  = f.error_messages
+
+  %p
+    = f.label :name, 'Kategoria'
+    = f.select( :category, ["Ścieżka rowerowa", "Trasa rowerowa", "Projekt / budowa"])
+
+  %p
+    = f.label :name, 'Nazwa'
+    = f.text_field :name
+
+  %p
+    = f.label :description, 'Opis'
+    = f.text_area :description, :rows => 2
+
+  %p
+    = f.label :attachment, 'Zdjęcie'
+    = f.file_field :attachment
+
+  %p
+    = f.label :polyline, 'Trasa'
+    = f.hidden_field :polyline
+    %span#length Zaznacz na mapie.
+
+  %p#submit
+    = f.submit submit
+    lub
+    = link_to "Anuluj", '/', :class => 'back'

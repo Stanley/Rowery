@@ -1,37 +1,39 @@
-#map_div
+#map
+  #map_div
+  #controls
+    %ul
+      %li>
+        =link_to "Parkingi", markers_path
+      %li
+        =link_to '+', new_marker_path('marker[category]' => 6), :title => 'Dodaj parking'
+    %ul
+      %li>
+        =link_to "Usterki", markers_path
+      %li
+        =link_to '+', new_marker_path('marker[category]' => 7), :title => 'Dodaj usterkę'
+    %ul
+      %li>
+        =link_to "Usługi", markers_path
+      %li
+        =link_to '+', new_marker_path('marker[category]' => 8), :title => 'Dodaj usługę'
+
+
 #trasy
-  #add
-    %img(src='/images/add.png' alt='dodaj')
-    %br/
-    dodaj
+  =link_to 'dodaj', new_line_path, :id => 'add', :title => 'Dodaj ścieżkę'
 
   #sciezki
     Ścieżki rowerowe
     #chceckboxes
-      %input(id="r1" type="checkbox")
+      %input(id="r1" type="checkbox" rel="1")
       %label(for="r1") Ścieżki rowerowe
-      %input(id="r2" type="checkbox")
-      %label(for="r2") Alejki
-      %input(id="r3" type="checkbox")
+      %input(id="r2" type="checkbox" rel="2")
+      %label(for="r2") Alejki miejskie
+      %input(id="r3" type="checkbox" rel="3")
       %label(for="r3") Szerokie chodniki
-      %input(id="r4" type="checkbox")
+      %input(id="r4" type="checkbox" rel="4")
       %label(for="r4") Trasy rowerowe
-      %input(id="r5" type="checkbox")
+      %input(id="r5" type="checkbox" rel="5")
       %label(for="r5") Planowane ścieżki rowerowe
 
-    - form_for(@line) do |f|
-      = f.error_messages
-
-      %p
-        = f.label :name
-        = f.text_field :name
-
-      %p
-        = f.label :description
-        = f.text_area :description, :rows => 2
-
-      %p
-        = f.submit "Dodaj"
-        or
-        = link_to "Wróć", :back
+#content  
     

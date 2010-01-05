@@ -5,7 +5,6 @@ class SessionsController < ApplicationController
   end
 
   def create
-
     request.env['warden'].authenticate!
     if logged_in?
       flash[:notice] = "Welcome"
@@ -17,7 +16,7 @@ class SessionsController < ApplicationController
 
   def unauthenticated
     flash[:error] = "Authentication Required"
-    render :new
+    redirect_to new_session_path
   end
 
   def destroy

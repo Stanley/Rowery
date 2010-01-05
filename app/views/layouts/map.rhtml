@@ -12,15 +12,25 @@
 
     </head>
     <body>
+      <div style="text-align:right; font-size: 13px; color:#eee">
+        <%- if current_user %>
+          Zalogowany jako <%= link_to current_user.email, "user_path(current_user.id)" %> | <%= link_to 'log out', logout_path %>
+        <%- else !current_user %>
+          <a href="/login">log in</a>
+        <%- end %>
+      </div>
+
         <div id="main">
-            <div id="notice" style="display:none;"></div>
-            <div id="helper" style="display:none;"></div>
+            <div id="notice">
+              <%= flash[:notice] %>
+            </div>
+            <div id="error">
+              <%= flash[:error] %>
+            </div>
             <%= yield %>
         </div>
         <div style="text-align:right; font-size: 13px; color:#eee">
-          <a href="javascript:stats()">stats</a>
-          |
-          <a href="/login">admin</a>
+          <a href="/stats">stats</a>
           |
           &copy; by <a href="javascript:alert('Kontakt: stanislaw.at.wasiutynski.net')">me</a></div>
     </body>

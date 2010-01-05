@@ -1,0 +1,15 @@
+%table
+  %tr
+    %th nazwa
+    %th opis
+    %th katregoria
+    %th
+    %th
+
+  - @markers.each do |marker|
+    %tr
+      %td= marker.name
+      %td= marker.description
+      %td= marker.category
+      %td=link_to "edytuj", edit_marker_path(marker.name), :title => "Edytuj " + marker.name 
+      %td usuń

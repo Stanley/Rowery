@@ -1,7 +1,7 @@
-#error= flash[:error]
 
-%h1 Log in
 - form_tag sessions_url do
+  %h3#error= flash[:error]
+  %h1 Log in
   %p
     = label_tag 'username'
     = text_field_tag 'username', @login

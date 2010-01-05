@@ -1,0 +1,20 @@
+- form_for(@marker, :html => {:multipart => true}, :url => {:action => action}) do |f|
+  = f.error_messages
+
+  = f.hidden_field :category, :value => @marker.category || params[:marker]['category']
+  = f.hidden_field :lat
+  = f.hidden_field :lng
+
+  %p
+    = f.label :name, 'Nazwa'
+    = f.text_field :name
+
+  %p
+    = f.label :description, 'Opis'
+    = f.text_area :description, :rows => 2
+
+  %p
+    = f.label :attachment, 'Zdjęcie'
+    = f.file_field :attachment
+  %p
+    = f.submit submit    
