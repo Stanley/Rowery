@@ -10,13 +10,18 @@ module NavigationHelpers
     
       when /the homepage/
         '/'
-    
+      
+      when /the new marker page/
+        new_marker_path
+
       when /the new user page/
         signup_path
 
       when /login page/
         login_path
 
+      when /markers page/
+        markers_path
 
     # Add more mappings here.
     # Here is a more fancy example:
